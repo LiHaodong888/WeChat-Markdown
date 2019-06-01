@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+  <meta name="email" content="lihaodongmail@163.com">
+  <meta name="description" content="一款简单易用的微信公众号格式化工具，主要针对代码做格式化处理。">
+  <title>WeChat Markdown</title>
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./themes/github-v2.css" id="codeThemeId" />
+  <link rel="stylesheet" id="pageThemeId" />
+</head>
+<body>
+<div class="topheader">
+  <a href="http://md.52lhd.com"><h1>WeChat Markdown</h1></a>
+  <span>微信公众号格式化工具</span>
+  <ul>
+    <li><a href="http://www.52lhd.com/" target="_blank">李浩东的博客</a></li>
+  </ul>
+</div>
+<textarea id="input" spellcheck="false"></textarea>
+
+<button class="btn copy-button" style="display:none;" data-clipboard-action="cut" data-clipboard-target="#outputCtt">复制</button>
+<button class="btn convert-button">预览</button>
+
+<div id="output">
+  <div class="themes-config">
+    <div class="theme-wrapper">
+      <label>页面主题选择：</label><select class="page-theme"></select>
+    </div>
+    <div class="theme-wrapper">
+      <label>代码主题选择：</label><select class="code-theme"></select>
+    </div>
+  </div>
+  <div class="wrapper" id="outputCtt"></div>
+</div>
+</body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6a553e2c8f1d23656a69910b14f96aff";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
